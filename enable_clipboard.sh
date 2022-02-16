@@ -1,7 +1,13 @@
 #!/bin/bash
 
-if [[ ! $(adb --version | grep "Android Debug Bridge") ]]; then pkg install android-tools; fi;
-
+if [[ ! $(adb --version | grep "Android Debug Bridge") ]]; then 
+  if [[ $(command -v termux-setup-storage) ]]; then
+    pkg install android-tools;
+  else
+    echo "adb not found!";
+	exit;
+  fi;
+fi;
 read -p "Enter hostname or IP address: [localhost] " address
 if [[ ! $address ]]; then address="localhost"; fi;
 
