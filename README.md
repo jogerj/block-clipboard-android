@@ -15,7 +15,7 @@ This script accesses your Android phone via adb (without requiring a separate co
 ## Requirements
 - Android device running Android 10 or above
 - Latest version of [Termux](https://f-droid.org/en/packages/com.termux/) (to run without separate computer)
-  - Without Termux, you can also use a <a href="#" title="macOS, Linux, others UNIX based, etc.">`computer with (bash) shell`</a> and `adb` installed on the **same network** as your device.
+  - Without Termux, you can also use a computer with (bash) shell and `adb` installed on the **same network** as your device.
 
 ## How to
 1. Open Termux and clone this repository (requires git installed, `pkg install git`)
